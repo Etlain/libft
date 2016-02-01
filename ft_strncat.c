@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 18:47:18 by mmouhssi          #+#    #+#             */
-/*   Updated: 2015/12/07 16:56:04 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/02/02 00:34:03 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strncat(char *s1, char *s2, size_t n)
 
 	j = 0;
 	i = ft_strlen(s1);
-	while (j < n)
+	while (j < n && s2[j] != '\0')
 	{
 		s1[i] = s2[j];
 		j++;
