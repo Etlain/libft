@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/01/08 14:23:57 by abara            ###   ########.fr       */
+/*   Updated: 2016/02/02 22:56:24 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# define BUFF_SIZE 10
 
 typedef struct		s_list
 {
@@ -87,5 +88,6 @@ int				ft_power(int nb, int power);
 int				ft_factorial(int nb);
 int				ft_sqrt(int nb);
 void				ft_swap(int *a, int *b);
+int				get_next_line(int const fd, char **line);
 
 #endif
