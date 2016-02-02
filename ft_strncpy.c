@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 17:28:14 by mmouhssi          #+#    #+#             */
-/*   Updated: 2015/12/08 16:32:47 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/02/02 23:19:46 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strncpy(char *dst, char *src, size_t n)
 
 	i = 0;
 	ft_bzero(dst, n);
-	while (i < n)
+	while (i < n && src[i] != '\0')
 	{
 		if (src[i] != '\0')
 			dst[i] = src[i];
