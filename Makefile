@@ -6,7 +6,7 @@
 #    By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 09:06:02 by mmouhssi          #+#    #+#              #
-#*   Updated: 2016/02/02 23:09:04 by mmouhssi         ###   ########.fr       *#
+#*   Updated: 2016/02/03 22:34:01 by mmouhssi         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,3 +43,5 @@ fclean: clean
 	rm -rf $(NAME)
 
 re: fclean all
+
+.PHONY: all clean fclean re
