@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/02/08 01:32:59 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/03/31 03:16:31 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,12 @@ typedef struct		s_list
 	size_t		content_size;
 	struct s_list	*next;
 }			t_list;
+
+typedef struct		s_pos
+{
+	int		x;
+	int		y;
+}			t_pos;
 
 void			*ft_memset(void *b, int n, size_t len);
 void			ft_bzero(void *s, size_t n);
@@ -89,6 +95,7 @@ int			ft_power(int nb, int power);
 int			ft_factorial(int nb);
 int			ft_sqrt(int nb);
 int			ft_htoi(char *str);
+int			ft_abs(int n);
 void			ft_swap(int *a, int *b);
 int			get_next_line(int const fd, char **line);
 
