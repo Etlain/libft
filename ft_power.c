@@ -6,13 +6,13 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 11:35:40 by mmouhssi          #+#    #+#             */
-/*   Updated: 2015/12/10 11:36:02 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/04/07 21:03:58 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_power(int nb, int power)
+long	ft_power(int nb, int power)
 {
-	int result;
+	long result;
 
 	if (power > 0)
 	{
