@@ -6,15 +6,15 @@
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/04 22:36:14 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/04/07 23:16:32 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/04/14 20:22:18 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_fill_str(char *str , unsigned int nbr, unsigned int p, int i)
+static void	ft_fill_str(char *str , unsigned int nbr, unsigned int p, int i)
 {
-	int max;
+	int	max;
 	
 	p = ft_power(2, i);
 	max = i;
@@ -31,11 +31,11 @@ void	ft_fill_str(char *str , unsigned int nbr, unsigned int p, int i)
 	}
 }
 
-char *ft_itob(unsigned int nbr)
+char		*ft_itob(unsigned int nbr)
 {
-	char	*str;
-	int	i;
-	unsigned int p;
+	unsigned int 	p;
+	char		*str;
+	int		i;
 
 	if (nbr == 0)
 		return ("0");

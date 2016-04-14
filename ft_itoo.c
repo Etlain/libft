@@ -1,50 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoh.c                                          :+:      :+:    :+:   */
+/*   ft_itoo.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/03 23:05:39 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/04/14 20:23:34 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/04/14 20:24:08 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static long	ft_less(const unsigned int nbr, int *i, int *h)
+static long 	ft_less(const unsigned int nbr, int *i, int *h)
 {
 	long s;
 
 	s = 0;
-	*h = 15;
+	*h = 7;
 	while (s < nbr)
 	{
-		s = ft_power(16, *i) * *h;
+		s = ft_power(8, *i) * *h;
 		(*i)++;
 	}
 	s >= nbr ? (*i)-- : 0;
 	while (s > nbr)
 	{
 		*h < 1 ? (*i)-- : 0;
-		*h < 1 ? *h = 15 : 0;
-		s = ft_power(16, *i) * *h;
+		*h < 1 ? *h = 7 : 0;
+		s = ft_power(8, *i) * *h;
 		s > nbr ? (*h)-- : 0;
 	}
 	return (s);
 }
 
-static char	nbr_to_hex(int h, int size)
-{
-	if (h >= 10 && h <= 15 && size == 1)
-		return (h + 87);
-	else if (h >= 10 && h <= 15 && size == 2)
-		return (h + 55);
-	else
-		return (h + '0');
-}
-
-char		*ft_itoh(unsigned int nbr, int size)
+char	*ft_itoo(unsigned int nbr)
 {
 	char	*str;
 	long	l;
@@ -64,7 +54,7 @@ char		*ft_itoh(unsigned int nbr, int size)
 	while (i >= 0  && nbr != 0)
 	{
 		nbr = nbr - l;
-		str[max - i] = nbr_to_hex(h, size);
+		str[max - i] = h + '0';
 		l = ft_less(nbr, &i, &h);
 	}
 	return (str);

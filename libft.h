@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/04/08 00:50:09 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/04/14 19:57:59 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ int			ft_sqrt(int nb);
 int			ft_htoi(char *str);
 char			*ft_itob(unsigned int nbr);
 char			*ft_itoh(unsigned int nbr, int size);
+char			*ft_itoo(unsigned int nbr);
 int			ft_abs(int n);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
