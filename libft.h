@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/04/19 22:28:35 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/04/19 22:37:24 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,8 +100,11 @@ char			*ft_itoab(unsigned int nbr);
 char			*ft_itoah(unsigned int nbr, int size);
 char			*ft_itoao(unsigned int nbr);
 int			ft_abs(int n);
+int			ft_sizebyte(long nbr);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
+void			ft_putwchar(wchar_t c);
+void			ft_putwstr(wchar_t *str);
 int			get_next_line(int const fd, char **line);
 
 #endif
