@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/04/19 22:37:24 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/05/10 19:57:31 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,9 @@ int			ft_ahtoi(char *str);
 char			*ft_itoab(unsigned int nbr);
 char			*ft_itoah(unsigned int nbr, int size);
 char			*ft_itoao(unsigned int nbr);
+char			*ft_lltoa(long long nbr);
+char			*ft_lltoah(unsigned long long nbr, int size);
+char			*ft_lltoao(unsigned long long nbr);
 int			ft_abs(int n);
 int			ft_sizebyte(long nbr);
 void			ft_swap(int *a, int *b);
