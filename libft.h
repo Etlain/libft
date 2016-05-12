@@ -108,6 +108,7 @@ void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
 void			ft_putwchar(wchar_t c);
 void			ft_putwstr(wchar_t *str);
+void			ft_putldbl(long double nbr, int size);
 int			get_next_line(int const fd, char **line);
 
 #endif
