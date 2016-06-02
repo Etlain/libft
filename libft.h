@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/05/10 19:57:31 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/02 20:47:44 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,12 +102,17 @@ char			*ft_itoao(unsigned int nbr);
 char			*ft_lltoa(long long nbr);
 char			*ft_lltoah(unsigned long long nbr, int size);
 char			*ft_lltoao(unsigned long long nbr);
+char			*ft_ulltoa(unsigned long long nbr);
 int			ft_abs(int n);
 int			ft_sizebyte(long nbr);
+int			ft_sizewchar(long n);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
 void			ft_putwchar(wchar_t c);
 void			ft_putwstr(wchar_t *str);
+void			ft_putnwstr(wchar_t *str, int lgt);
+int			ft_wstrlen(wchar_t *str);
+int			ft_wnstrlen(wchar_t *str, int lgt);
 void			ft_putldbl(long double nbr, int size);
 int			get_next_line(int const fd, char **line);
 
