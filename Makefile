@@ -6,7 +6,7 @@
 #    By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 09:06:02 by mmouhssi          #+#    #+#              #
-#*   Updated: 2016/06/03 02:40:36 by mmouhssi         ###   ########.fr       *#
+#*   Updated: 2016/06/03 04:49:57 by mmouhssi         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -98,6 +98,17 @@ SRC =   conversion/ft_ahtoi.c	\
 	string/ft_strtrim.c	\
 	string/ft_wstrlen.c	\
 	string/ft_wnstrlen.c	\
+	ft_printf/add_width.c	\
+	ft_printf/change_color.c\
+	ft_printf/fill_zero.c	\
+	ft_printf/ft_format.c	\
+	ft_printf/ft_is.c	\
+	ft_printf/ft_printf.c	\
+	ft_printf/ft_sc.c	\
+	ft_printf/ft_type.c	\
+	ft_printf/ft_wp.c	\
+	ft_printf/no_print.c	\
+	ft_printf/write_nbr.c	\
 
 OBJ = $(SRC:.c=.o)
 
@@ -107,10 +118,9 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
-	ranlib $(NAME)
 
-$(OBJ) : $(SRC)
-	gcc -c $(FLAGS) -o $@ $<
+$(OBJ) :
+	gcc -c $(FLAGS) -o $@ $*.c
 
 clean:
 	rm -rf $(OBJ)

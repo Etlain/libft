@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 01:46:23 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/03 05:00:23 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "ft_printf.h"
 # define BUFF_SIZE 10
 
 typedef struct		s_list
@@ -108,6 +109,7 @@ int			ft_sizebyte(void *nbr);
 int			ft_sizewchar(long n);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
+void			ft_putnstr(char *str, int lgt);
 void			ft_putwchar(wchar_t c);
 void			ft_putwstr(wchar_t *str);
 void			ft_putnwstr(wchar_t *str, int lgt);
