@@ -6,7 +6,7 @@
 #    By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 09:06:02 by mmouhssi          #+#    #+#              #
-#*   Updated: 2016/06/03 04:49:57 by mmouhssi         ###   ########.fr       *#
+#*   Updated: 2016/06/21 00:31:32 by mmouhssi         ###   ########.fr       *#
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,11 +14,12 @@ NAME = libft.a
 
 SRC =   conversion/ft_ahtoi.c	\
 	conversion/ft_atoi.c	\
+	conversion/ft_base.c	\
 	conversion/ft_itoa.c	\
-	conversion/ft_itoab.c	\
 	conversion/ft_itoah.c	\
 	conversion/ft_itoao.c	\
 	conversion/ft_lltoa.c	\
+	conversion/ft_lltoab.c	\
 	conversion/ft_lltoah.c	\
 	conversion/ft_lltoao.c	\
 	conversion/ft_ulltoa.c	\
