@@ -6,7 +6,7 @@
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/18 21:49:14 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 04:51:29 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/21 18:52:16 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void		ft_putwchar(wchar_t c)
 {
 	int size;
 
-	size = ft_sizebyte(&c);
+	size = ft_sizebyte(c);
 	if (size < 8)
 		ft_putchar(c);
 	else if (size < 12)

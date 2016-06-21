@@ -6,7 +6,7 @@
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/03 18:45:53 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/01 19:07:22 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/21 18:54:27 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ static int	ft_c(t_format format, va_list lst, char str)
 	int		width;
 
 	width = 0;
+	c = 0;
 	if (format.modifier != NULL && format.modifier[0] == 'l')
 		str == 'c' ? str = 'C' : 0;
 	format.flags != '-' ? add_width(format, L"1", &width) : 0;

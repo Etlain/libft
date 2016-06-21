@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/21 00:53:44 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/21 18:44:51 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ char			*ft_lltoah(unsigned long long nbr, int size);
 char			*ft_lltoao(unsigned long long nbr);
 char			*ft_ulltoa(unsigned long long nbr);
 int			ft_abs(int n);
-int			ft_sizebyte(void *nbr);
+int			ft_sizebyte(uint64_t nbr);
 int			ft_sizewchar(long n);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);

@@ -6,7 +6,7 @@
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/14 16:56:14 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 03:06:42 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/21 18:47:48 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_sizewchar(long n)
 {
 	int size;
 
-	size = ft_sizebyte(&n);
+	size = ft_sizebyte(n);
 	if (size < 8)
 		return (1);
 	else if (size < 12)
