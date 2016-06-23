@@ -6,7 +6,7 @@
 /*   By: mmouhssi <mmouhssi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/03 14:36:13 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 01:41:58 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/06/23 17:52:27 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,9 @@
 
 void	ft_put_error(char *str)
 {
-	int i;
 	char c;
 
 	c = '\n';
-	i = 0;
-	while (str[i] != '\0')
-	{
-		write(2, &str[i], 1);
-		i++;
-	}
+	write(2, str, ft_strlen(str));
 	write(2, &c, 1);
 }
