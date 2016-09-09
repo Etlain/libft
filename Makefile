@@ -82,6 +82,7 @@ SRC =   conversion/ft_ahtoi.c	\
 	string/ft_striter.c	\
 	string/ft_striteri.c	\
 	string/ft_strjoin.c	\
+	string/ft_strjoin_path.c \
 	string/ft_strlcat.c	\
 	string/ft_strlen.c	\
 	string/ft_strmap.c	\
