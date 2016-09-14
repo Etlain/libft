@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/09/09 11:48:18 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/09/14 12:06:47 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,9 @@ void			ft_init_str(char *str, unsigned int c, int n);
 void			ft_putstr_tab(char **tab);
 void			ft_putendl_tab(char **tab);
 void			ft_free_tab(char **tab);
+int			ft_abs(int n);
 long			ft_power(int nb, int power);
+int			ft_nbrlen(long nbr);
 int			ft_factorial(int nb);
 int			ft_sqrt(int nb);
 int			ft_ahtoi(char *str);
@@ -106,12 +108,13 @@ char			*ft_lltoab(unsigned long long nbr);
 char			*ft_lltoah(unsigned long long nbr, int size);
 char			*ft_lltoao(unsigned long long nbr);
 char			*ft_ulltoa(unsigned long long nbr);
-int			ft_abs(int n);
+char			*ft_ctoa(char c);
 int			ft_sizebyte(uint64_t nbr);
 int			ft_sizewchar(long n);
 void			ft_swap(int *a, int *b);
 void			ft_put_error(char *str);
 void			ft_putnstr(char *str, int lgt);
+char			*ft_strndup(const char *s1, int n);
 void			ft_putwchar(wchar_t c);
 void			ft_putwstr(wchar_t *str);
 void			ft_putnwstr(wchar_t *str, int lgt);
