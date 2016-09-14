@@ -19,7 +19,7 @@ char	*ft_strndup(const char *s1, int n)
 
 	i = 0;
 	str = (char *)malloc(ft_strlen(s1) + 1);
-	while (s1[i] != n && i < n)
+	while (s1[i] != '\0' && i < n)
 	{
 		str[i] = s1[i];
 		i++;
