@@ -6,11 +6,11 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/09/07 15:24:26 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/09/07 16:12:11 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/09/26 15:35:17 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_nbrlen(long	nbr)
+int	ft_nbrlen(long nbr)
 {
 	int i;
 
