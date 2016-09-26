@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/09/23 22:48:54 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2016/09/26 14:40:07 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,7 @@ void			ft_putstr_tab(char **tab);
 void			ft_putendl_tab(char **tab);
 void			ft_free_tab(char **tab);
 int			ft_abs(int n);
+double		ft_fabs(double nbr);
 long			ft_power(int nb, int power);
 int			ft_nbrlen(long nbr);
 int			ft_factorial(int nb);
