@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-char static		*ft_compare(const char *s1, const char *s2, int i)
+static char		*ft_compare(const char *s1, const char *s2, int i)
 {
 	int j;
 

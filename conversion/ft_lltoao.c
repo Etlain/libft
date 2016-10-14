@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-static int	val_oct(unsigned long long *nbr)
+static int	val_oct(long long *nbr)
 {
 	int octal;
 

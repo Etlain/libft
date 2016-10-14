@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-static int	val_hex(uint64_t *nbr)
+static int	val_hex(long long *nbr)
 {
 	int hexa;
 
@@ -31,7 +31,7 @@ static int	val_hex(uint64_t *nbr)
 	return (hexa);
 }
 
-static int	val_hex2(uint64_t *nbr)
+static int	val_hex2(long long *nbr)
 {
 	int hexa;
 
@@ -53,8 +53,8 @@ static int	val_hex2(uint64_t *nbr)
 char		*ft_lltoah(unsigned long long nbr, int size)
 {
 	if (size == 1)
-		return (ft_base((uint64_t)nbr, val_hex));
+		return (ft_base((long long)nbr, val_hex));
 	else if (size == 2)
-		return (ft_base((uint64_t)nbr, val_hex2));
+		return (ft_base((long long)nbr, val_hex2));
 	return (NULL);
 }

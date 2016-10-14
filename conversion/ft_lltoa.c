@@ -33,7 +33,7 @@ static long	long	ft_dizaine(char **str, long long n)
 	return (dizaine);
 }
 
-char static			*ft_fill(char *str, long long nbr, long long d, int *i)
+static char		*ft_fill(char *str, long long nbr, long long d, int *i)
 {
 	long long s;
 

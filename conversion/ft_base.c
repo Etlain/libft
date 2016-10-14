@@ -21,7 +21,7 @@ static char	*ft_zero(void)
 	return (bin);
 }
 
-char		*ft_base(uint64_t nbr, int (*val)(uint64_t *nbr))
+char		*ft_base(long long nbr, int (*val)(long long *nbr))
 {
 	char	tab[sizeof(nbr) * 8];
 	char	*bin;

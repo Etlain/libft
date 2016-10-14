@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-static int	val_bin(unsigned long long *nbr)
+static int	val_bin(long long *nbr)
 {
 	int bin;
 

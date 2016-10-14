@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-int	ft_sizebyte(uint64_t nbr)
+int	ft_sizebyte(unsigned long nbr)
 {
 	int size;
 

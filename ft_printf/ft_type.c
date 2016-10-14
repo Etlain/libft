@@ -28,7 +28,7 @@ static int	add_umodifier(t_format format, va_list lst)
 	else if (ft_strcmp(format.modifier, "ll") == 0)
 		length = write_nbr(format, va_arg(lst, unsigned long long));
 	else if (format.modifier[0] == 'j')
-		length = write_nbr(format, (long long)va_arg(lst, uintmax_t));
+		length = write_nbr(format, (long long)va_arg(lst, unsigned int));
 	else if (format.modifier[0] == 'z')
 		length = write_nbr(format, (long long)va_arg(lst, size_t));
 	return (length);
@@ -53,7 +53,7 @@ static int	add_modifier(t_format format, va_list lst)
 	else if (ft_strcmp(format.modifier, "ll") == 0)
 		length = write_nbr(format, va_arg(lst, long long));
 	else if (format.modifier[0] == 'j')
-		length = write_nbr(format, (long long)va_arg(lst, intmax_t));
+		length = write_nbr(format, (long long)va_arg(lst, int));
 	else if (format.modifier[0] == 'z')
 		length = write_nbr(format, (long long)va_arg(lst, size_t));
 	return (length);
