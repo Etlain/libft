@@ -25,8 +25,8 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	files/ft_putchar_fd.c files/ft_putendl_fd.c files/ft_putnbr_fd.c	\
 	files/ft_putstr_fd.c files/get_next_line.c	\
 	\
-	is/ft_isalnum.c is/ft_isalpha.c	is/ft_isascii.c	is/ft_isdigit.c		\
-	is/ft_isprint.c	\
+	is/ft_isalnum.c is/ft_isalpha.c	is/ft_isanbr.c is/ft_isascii.c		\
+	is/ft_isdigit.c is/ft_isprint.c	\
 	\
 	list/ft_lstadd.c list/ft_lstdel.c list/ft_lstdelone.c list/ft_lstiter.c	\
 	list/ft_lstmap.c list/ft_lstnew.c	\
