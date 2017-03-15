@@ -7,7 +7,8 @@ int	ft_isanbr(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		return (ft_isdigit(str[i]));
+		if (str[i] != '-')
+			return (ft_isdigit(str[i]));
 		i++;
 	}
 	return (0);
