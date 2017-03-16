@@ -29,7 +29,7 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	is/ft_isdigit.c is/ft_isprint.c	\
 	\
 	list/ft_lstadd.c list/ft_lstdel.c list/ft_lstdelone.c list/ft_lstiter.c	\
-	list/ft_lstmap.c list/ft_lstnew.c	\
+	list/ft_lstmap.c list/ft_lstnew.c list/ft_lstaddend.c \
 	\
 	math/ft_abs.c math/ft_factorial.c math/ft_nbrlen.c math/ft_power.c	\
 	math/ft_sqrt.c	math/ft_fabs.c \
