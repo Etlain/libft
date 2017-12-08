@@ -6,14 +6,14 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/08 17:29:50 by mmouhssi          #+#    #+#             */
-/*   Updated: 2017/12/08 17:45:11 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2017/12/08 17:58:20 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
-# define SIZE_INPUT_BUF 10
+#define SIZE_INPUT_BUF 10
 
-char	*ft_get_input()
+char	*ft_get_input(void)
 {
 	char	*input;
 	char	*buf;
@@ -22,7 +22,7 @@ char	*ft_get_input()
 	input = NULL;
 	buf = (char *)ft_memalloc(SIZE_INPUT_BUF);
 	while (read(0, buf, SIZE_INPUT_BUF) != 0)
-	{	
+	{
 		if (input)
 		{
 			tmp = input;
@@ -39,5 +39,5 @@ char	*ft_get_input()
 		ft_bzero(buf, SIZE_INPUT_BUF);
 	}
 	free(buf);
-	return (input);	
+	return (input);
 }
