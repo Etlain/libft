@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 18:32:43 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/01/05 19:30:08 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/01/05 20:55:56 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstdel_elem(t_list **lst)
 {
 	t_list *tmp;
 
-	if ((*lst)->next != NULL)
+	if (*lst != NULL && (*lst)->next != NULL)
 	{
 		tmp = (*lst)->next;
 		free((*lst)->content);
