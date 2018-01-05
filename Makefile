@@ -30,7 +30,7 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	\
 	list/ft_lstadd.c list/ft_lstdel.c list/ft_lstdelone.c list/ft_lstiter.c	\
 	list/ft_lstmap.c list/ft_lstnew.c list/ft_lstaddend.c 					\
-	list/ft_lstdel_elem.c \
+	list/ft_lstdel_elem.c list/ft_lst_putendl.c list/ft_lst_cpy_tab.c		\
 	\
 	math/ft_abs.c math/ft_factorial.c math/ft_nbrlen.c math/ft_power.c	\
 	math/ft_sqrt.c	math/ft_fabs.c \
@@ -62,7 +62,7 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	input/ft_param.c input/ft_get_input.c \
 	\
 	tab/ft_putstr_tab.c tab/ft_putendl_tab.c tab/ft_free_tab.c	\
-	tab/ft_sort_tab.c tab/ft_new_cpy_tab.c	\
+	tab/ft_sort_tab.c tab/ft_new_cpy_tab.c tab/ft_tablen.c		\
 
 OBJ = $(SRC:.c=.o)
 
