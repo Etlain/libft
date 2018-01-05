@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstaddend.c                                     :+:      :+:    :+:   */
+/*   ft_new_cpy_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/03/16 16:50:36 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/01/05 17:49:41 by mmouhssi         ###   ########.fr       */
+/*   Created: 2017/12/14 19:11:06 by mmouhssi          #+#    #+#             */
+/*   Updated: 2017/12/14 19:44:05 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_lstaddend(t_list **alst, t_list *new)
+char	**ft_new_cpy_tab(char **src)
 {
-	t_list	*t;
+	char 	**tab;
+	int		i;
+	int		lgt;
 
-	if (alst && new)
+	lgt = 0;
+	while (src[lgt] != NULL)
+		lgt++;
+	tab = (char **)malloc(sizeof(char *) * lgt + 1);
+	i = 0;
+	while (src[i] != NULL)
 	{
-		t = *alst;
-		while (t->next != NULL)
-			t = t->next;
-		t->next = new;
+		tab[i] = (char *)malloc(sizeof(char) * ft_strlen(src[i]));
+		ft_strcpy(tab[i], src[i]);
+		i++;
 	}
+	tab[i] = NULL;
+	return (tab);
 }
