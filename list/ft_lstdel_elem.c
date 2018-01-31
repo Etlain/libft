@@ -6,17 +6,22 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 18:32:43 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/01/05 20:55:56 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/01/31 13:09:09 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_lstdel_elem(t_list **lst)
+// a besoin de l element precedent lorsque c est le dernier maillon de la list
+// pour l effacer correctement
+
+void	ft_lstdel_elem(t_list **lst, t_list **last)
 {
 	t_list *tmp;
 
-	if (*lst != NULL && (*lst)->next != NULL)
+	if (*lst == NULL)
+		return ;
+	if ((*lst)->next != NULL)
 	{
 		tmp = (*lst)->next;
 		free((*lst)->content);
@@ -30,6 +35,8 @@ void	ft_lstdel_elem(t_list **lst)
 	{
 		free((*lst)->content);
 		free(*lst);
-		lst = NULL;
+		*lst = NULL;
+		if (*last)
+			(*last)->next = NULL;
 	}
 }
