@@ -31,6 +31,7 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	list/ft_lstadd.c list/ft_lstdel.c list/ft_lstdelone.c list/ft_lstiter.c	\
 	list/ft_lstmap.c list/ft_lstnew.c list/ft_lstaddend.c 					\
 	list/ft_lstdel_elem.c list/ft_lst_putendl.c list/ft_lst_cpy_tab.c		\
+	list/ft_lstlen.c list/ft_lst_to_tab.c 		\
 	\
 	math/ft_abs.c math/ft_factorial.c math/ft_nbrlen.c math/ft_power.c	\
 	math/ft_sqrt.c	math/ft_fabs.c \

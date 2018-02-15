@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/01/30 14:32:47 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/02/01 17:08:24 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,8 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 void				ft_lstdel_elem(t_list **lst, t_list **last);
 t_list				*ft_lst_cpy_tab(char **tab);
 void				ft_lst_putendl(t_list *lst);
+int					ft_lstlen(t_list *lst);
+char				**ft_lst_to_tab(t_list *lst);
 void				ft_init_str(char *str, unsigned int c, int n);
 void				ft_putstr_tab(char **tab);
 void				ft_putendl_tab(char **tab);
