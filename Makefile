@@ -36,9 +36,9 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	math/ft_abs.c math/ft_factorial.c math/ft_nbrlen.c math/ft_power.c	\
 	math/ft_sqrt.c	math/ft_fabs.c \
 	\
-	mem/ft_bzero.c mem/ft_memalloc.c mem/ft_memccpy.c mem/ft_memchr.c	\
-	mem/ft_memcmp.c	mem/ft_memcpy.c	mem/ft_memdel.c	mem/ft_memmove.c	\
-	mem/ft_memset.c	mem/ft_sizebyte.c	\
+	mem/ft_bzero.c mem/ft_bwzero.c mem/ft_memalloc.c mem/ft_memccpy.c 		\
+	mem/ft_memchr.c	mem/ft_memcmp.c	mem/ft_memcpy.c	mem/ft_memdel.c			\
+	mem/ft_memmove.c mem/ft_memset.c mem/ft_sizebyte.c	\
 	\
 	other/ft_swap.c other/ft_tolower.c other/ft_toupper.c	\
 	\
