@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/29 11:37:35 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 03:24:04 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/08 16:30:37 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,12 @@ char			*ft_strtrim(char const *s)
 			start++;
 	}
 	length++;
-	if (length < start)
+	if (length == 1)
+	{
+		if (s[0] == '\t' || s[0] == '\n' || s[0] == ' ')
+			length = 0;
+	}
+	else if (length < start)
 		length = start;
 	str = ft_strsub(s, start, length - start);
 	return (str);
