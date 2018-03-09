@@ -72,19 +72,20 @@ FLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar -rc $(NAME) $(OBJ)
-	@echo "\033[36;40m Make $(NAME) \033[0m"
+	@ar -rc $(NAME) $(OBJ)
+	@echo "\033[36;40mMake $(NAME) \033[0m"
 
 %.o: %.c
 	gcc $(FLAGS) -o $@ -c $<
 
 clean:
 	@rm -rf $(OBJ)
-	@echo "\033[36;40m Make clean $(NAME) \033[0m"
+	@echo "\033[36;40mMake clean $(NAME) \033[0m"
 
-fclean: clean
+fclean:
+	@rm -rf $(OBJ)
 	@rm -rf $(NAME)
-	@echo "\033[36;40m Make fclean $(NAME) \033[0m"
+	@echo "\033[36;40mMake fclean $(NAME) \033[0m"
 
 re: fclean all
 
