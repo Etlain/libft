@@ -73,15 +73,18 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
+	@echo "\033[36;40m Make $(NAME) \033[0m"
 
-$(OBJ_PATH)%.o: $(SRC_PATH)%.c
+%.o: %.c
 	gcc $(FLAGS) -o $@ -c $<
 
 clean:
-	rm -rf $(OBJ)
+	@rm -rf $(OBJ)
+	@echo "\033[36;40m Make clean $(NAME) \033[0m"
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
+	@echo "\033[36;40m Make fclean $(NAME) \033[0m"
 
 re: fclean all
 
