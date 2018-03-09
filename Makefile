@@ -74,8 +74,8 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar -rc $(NAME) $(OBJ)
 
-$(OBJ) :
-	gcc -c $(FLAGS) -o $@ $*.c
+$(OBJ_PATH)%.o: $(SRC_PATH)%.c
+	gcc $(FLAGS) -o $@ -c $<
 
 clean:
 	rm -rf $(OBJ)
