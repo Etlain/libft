@@ -6,13 +6,13 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/05 19:34:29 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/01/05 19:37:22 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/09 16:30:24 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int     ft_tablen(char **tab)
+int		ft_tablen(char **tab)
 {
 	int i;
 

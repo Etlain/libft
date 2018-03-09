@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 11:54:54 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 02:43:17 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/09 16:39:29 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static long	long	ft_dizaine(char **str, long long n)
 	return (dizaine);
 }
 
-static char		*ft_fill(char *str, long long nbr, long long d, int *i)
+static char			*ft_fill(char *str, long long nbr, long long d, int *i)
 {
 	long long s;
 

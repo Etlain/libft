@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/14 19:11:06 by mmouhssi          #+#    #+#             */
-/*   Updated: 2017/12/14 19:44:05 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/09 16:31:30 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	**ft_new_cpy_tab(char **src)
 {
-	char 	**tab;
+	char	**tab;
 	int		i;
 	int		lgt;
 

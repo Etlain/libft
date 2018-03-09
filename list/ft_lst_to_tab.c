@@ -6,15 +6,15 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/01 16:57:35 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/02/01 18:23:57 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/09 16:36:10 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char **ft_lst_to_tab(t_list *lst)
+char		**ft_lst_to_tab(t_list *lst)
 {
-	t_list *tmp;
+	t_list	*tmp;
 	char	**tab;
 	int		len;
 	int		i;

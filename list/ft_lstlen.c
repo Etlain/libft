@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/01 16:00:29 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/02/01 16:52:16 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/09 16:40:16 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int		ft_lstlen(t_list *lst)
 {
-	t_list *tmp;
-	int len;
+	t_list	*tmp;
+	int		len;
 
 	tmp = lst;
 	len = 0;
