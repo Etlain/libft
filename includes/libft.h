@@ -6,7 +6,7 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 15:42:01 by mmouhssi          #+#    #+#             */
-/*   Updated: 2018/03/08 13:18:12 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2018/03/12 21:05:18 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,8 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strjoin_path(char const *path, char const *file);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
+char				*ft_str_delchar(char *str, char c);
+int					ft_nbr_char(char *str, char c);
 char				*ft_itoa(int n);
 void				ft_putchar(char c);
 void				ft_putstr(char const *s);

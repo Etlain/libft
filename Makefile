@@ -53,7 +53,8 @@ SRC =   conversion/ft_ahtoi.c conversion/ft_atoi.c conversion/ft_base.c		\
 	string/ft_strnequ.c string/ft_strnew.c string/ft_strnstr.c 		\
 	string/ft_strrchr.c string/ft_strsplit.c string/ft_strstr.c		\
 	string/ft_strsub.c string/ft_strtrim.c string/ft_wstrlen.c		\
-	string/ft_wnstrlen.c	\
+	string/ft_wnstrlen.c string/ft_nbr_char.c						\
+	string/ft_str_delchar.c	\
 	\
 	ft_printf/add_width.c ft_printf/change_color.c ft_printf/fill_zero.c	\
 	ft_printf/ft_format.c ft_printf/ft_is.c	ft_printf/ft_printf.c		\
