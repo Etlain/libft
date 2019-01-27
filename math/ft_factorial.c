@@ -6,13 +6,13 @@
 /*   By: mmouhssi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/10 11:36:14 by mmouhssi          #+#    #+#             */
-/*   Updated: 2016/06/03 02:52:54 by mmouhssi         ###   ########.fr       */
+/*   Updated: 2019/01/27 23:15:45 by mmouhssi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_factorial(int nb)
 {
-	if (nb > 1)
+	if (nb > 1 && nb < 13)
 	{
 		nb = nb * ft_factorial(nb - 1);
 		return (nb);
